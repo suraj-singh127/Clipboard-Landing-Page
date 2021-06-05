@@ -1,0 +1,401 @@
+:root{
+   --strongCyan:hsl(171, 66%, 44%);
+   --lightBlue:hsl(233, 100%, 69%);
+   --darkGrayishBlue:hsl(210, 10%, 33%);
+   --grayishBlue:hsl(201, 11%, 66%);
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// Utility Classes ///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* The borders at different places have been commented because they were initially used to check positioning */
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:1.4rem 1rem;
+    /* border: 2px solid black; */
+}
+
+.illustration{
+    /* border: 2px solid black; */
+    margin: 4rem 0rem;
+    padding: 0;
+}
+.illustration img{
+    /* border: 2px solid red; */
+    width: 18rem;
+}
+.description{
+    max-width: 40rem;
+}
+.description h2{
+    color: var(--darkGrayishBlue);
+    font-weight: 600;
+ }
+ .description p{
+     color: var(--grayishBlue);
+     font-weight: 400;
+ }
+#introSection .description h2{
+    font-size: 1.8rem;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////Top section////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#clipboard:before{
+   content: "";
+   background-image: url(images/bg-header-mobile.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+#introSection{
+    padding-top: 0rem;
+    margin-top: -1rem;
+}
+#clipboard{
+    margin-bottom: 0rem;
+}
+.logoContainer{
+    /* border: 2px solid black; */
+    margin-top: 6.83rem;
+    margin-bottom: 0;
+}
+
+#clipboard{
+    position: relative;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////Styling the different buttons/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    width: 18rem;
+    margin: 0.7rem;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: white;
+    box-shadow: 0px 10px 15px rgba(189, 188, 188, 0.432);
+}
+.front{
+    display: block;
+    padding: 1rem;
+    width: 16.2rem;
+    border-radius: 2rem;
+    transform: translate(-8px,-2px);
+}
+#frontIos{
+    background-color: var(--strongCyan);
+}
+#frontIos:hover{
+    transform: translate(-8px,-1px);
+    background-color: hsl(171, 63%, 51%);
+    cursor: pointer;
+}
+#frontMac{
+    background-color: var(--lightBlue);
+}
+#frontMac:hover{
+    transform: translate(-8px,-1px);
+    background-color: hsla(233, 96%, 81%, 0.925);
+    cursor:pointer;
+}
+#ios{
+    background-color: rgb(46, 150, 127);
+    box-shadow: 0px 10px 15px rgba(46, 150, 127, 0.452);
+}
+#mac{
+    background-color: rgb(91, 102, 192);
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////Snippets section //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#feautures .description{
+    margin: 3.17rem 0;
+}
+
+
+#logos img{
+    padding: 2rem 0;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////Supercharge Section///////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////// */
+#supercharge .description{
+    margin-bottom: 2rem;
+}
+#supercharge .services{
+  margin: 2rem 0rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// Logos Section //////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#logos{
+    margin: 2.88rem 0rem;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// Footer /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2.5rem 0rem;
+    background-color: rgba(245, 246, 248);
+    margin-top: 5rem;
+}
+#footer .logo img{
+    width: 4rem;
+    height: 4rem;
+    /* border: 2px solid black; */
+}
+
+#navlinks{
+    /* border: 2px solid black; */
+    display: grid;
+    width: 30rem;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    list-style: none;
+    margin:0px 5px;
+    color: rgb(98, 102, 103);
+    padding: 0rem 2rem;
+    padding-top: 2rem;
+}
+
+#navlinks li{
+    padding: 0.5rem 1rem;
+    font-weight: 450;
+    font-size: 1.2rem;
+    place-self: center;
+}
+#navlinks li:hover{
+    color: var(--strongCyan);
+    cursor: pointer;
+}
+.socials{
+    /* border: 2px solid black; */
+    padding-top: 2rem;
+}
+
+.socials svg{
+    padding: 10px;
+}
+.socials svg:hover{
+    cursor: pointer;
+    filter: invert(17%) sepia(55%) saturate(2932%) hue-rotate(144deg) brightness(113%) contrast(120%);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////For Tablets and Small screen computers /////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width:850px) {
+    
+    /* //////////////////////////////////////////Utility Classes /////////////////////////////////////////*/
+    .illustration img{
+        width: 35rem;
+    }
+    
+    .illustration{
+        margin: 0rem 0rem;
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .btn{
+        width: 14rem;
+        margin: 0.7rem;
+    }
+    
+    .front{
+        display: block;
+        width: 12.2rem;
+        transform: translate(-8px,-2px);
+    }
+
+    /* ///////////////////////////////////////////////// Top Section //////////////////////////////////////////*/
+    #clipboard:before{
+        content: "";
+        background-image: url(images/bg-header-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+     }
+
+     #introSection >.description{
+         margin: 2rem 0rem;
+     }
+
+     #introSection > .description h2{
+         font-size: 2.5rem;
+     }
+
+     #introSection > .description p{
+        font-size: 1.2rem;
+     }
+    
+     /* ////////////////////////////////////////////////Snippet Section////////////////////////////////////// */
+    #snippet > .description h2{
+       font-size: 2rem;
+    }
+
+    #feautures{
+        display: grid;
+        grid-template-areas: 
+        'image image quick'
+        'image image iCloud'
+        'image image history';
+        max-width: 1440px;
+        grid-auto-rows: 9rem;
+        justify-items: start;
+        margin: 10rem 0;
+    }
+
+    #feautures .description{
+        margin: 0 0rem 0 5rem;
+        text-align: left;
+        max-width: 20.5rem;
+    }
+
+    .illustration{
+        grid-area: image;
+    }
+
+    #feautures .illustration img{
+        width: 35rem;
+        margin-left: -8.05rem;
+    }
+
+    #d1{
+        grid-area: quick;    
+    }
+
+    #d2{
+        grid-area: iCloud;
+    }
+
+    #d3{
+        grid-area: history;
+    }
+
+    /* ///////////////////////////////////////////////Access section ///////////////////////////////////////*/
+    
+    #access > .description h2{
+        font-size: 2rem;
+    }
+
+    #access > .description{
+        margin-bottom: 3rem;
+    }
+
+    #access{
+       margin-bottom:0px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    /* //////////////////////////////////////////////Supercharge Section/////////////////////////////////// */
+    #supercharge>.description h2{
+        font-size: 2rem;
+    }
+    
+    .servicesContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .services{
+        max-width: 22.2rem;
+    }
+
+    /* ////////////////////////////////////// Logos Section ////////////////////////////////////////// */
+    #logos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #logos img{
+        margin:0 2rem;
+    }
+    
+    /* ////////////////////////////////////// Downloads Sections ///////////////////////////////////////////*/
+    #download>.description h2{
+        font-size: 2rem;
+    }
+    
+    /* ////////////////////////////////////// Footer //////////////////////////////////////////////////////*/
+    #navlinks{
+        /* border: 2px solid black; */
+        padding-top: 0.2rem;
+    }
+    
+    
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// For laptops and widescreen computers ////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width:1250px){
+    #feautures .illustration img{
+        width: 45rem;
+        margin-left: -16.05rem;
+    }
+    
+    .illustration img{
+        width: 45rem;
+    }
+    
+    #navlinks{
+        /* border: 2px solid black; */
+        padding-top: 0;
+    }
+}
