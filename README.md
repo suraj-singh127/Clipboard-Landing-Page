@@ -12,6 +12,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - [Author](#author)
 
 ## Overview
+Here you can check the site - https://clipboard-landing-page-main.netlify.app/
 
 ### The challenge
 
