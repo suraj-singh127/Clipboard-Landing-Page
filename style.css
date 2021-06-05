@@ -31,25 +31,33 @@ body{
     margin: 4rem 0rem;
     padding: 0;
 }
+
 .illustration img{
     /* border: 2px solid red; */
     width: 18rem;
 }
+
 .description{
     max-width: 40rem;
 }
+
 .description h2{
     color: var(--darkGrayishBlue);
     font-weight: 600;
  }
+
  .description p{
      color: var(--grayishBlue);
      font-weight: 400;
  }
+
 #introSection .description h2{
     font-size: 1.8rem;
 }
 
+.hiddenHeadings{
+  display:none;
+}
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////
