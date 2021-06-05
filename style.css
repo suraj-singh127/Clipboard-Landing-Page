@@ -108,27 +108,27 @@ body{
     border-radius: 2rem;
     transform: translate(-8px,-2px);
 }
-#frontIos{
+.frontIos{
     background-color: var(--strongCyan);
 }
-#frontIos:hover{
+.frontIos:hover{
     transform: translate(-8px,-1px);
     background-color: hsl(171, 63%, 51%);
     cursor: pointer;
 }
-#frontMac{
+.frontMac{
     background-color: var(--lightBlue);
 }
-#frontMac:hover{
+.frontMac:hover{
     transform: translate(-8px,-1px);
     background-color: hsla(233, 96%, 81%, 0.925);
     cursor:pointer;
 }
-#ios{
+.ios{
     background-color: rgb(46, 150, 127);
     box-shadow: 0px 10px 15px rgba(46, 150, 127, 0.452);
 }
-#mac{
+.mac{
     background-color: rgb(91, 102, 192);
 }
 
